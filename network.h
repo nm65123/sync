@@ -1,12 +1,14 @@
 #ifndef NETWORK_H
 #define NETWORK_H
 
+#include <netinet/in.h>
 #include <arpa/inet.h>
 #include <ifaddrs.h>
 #include <netdb.h>
 #include <string.h>
 #include <sys/socket.h>
 #include <sys/types.h>
+#include <errno.h>
 #include "usage.h"
 
 extern char *gethostip();
